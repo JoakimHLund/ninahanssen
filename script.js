@@ -83,10 +83,9 @@ async function fetchContentfulData() {
                         // Add button below shortText if link exists
                         if (entryData.fields.link) {
                             const linkButton = document.createElement("a");
-                            linkButton.textContent = "Read More";
+                            linkButton.textContent = "Les Mer";
                             linkButton.href = entryData.fields.link;
                             linkButton.classList.add("card-button");
-                            linkButton.target = "_blank";
                             textDiv.appendChild(linkButton);
                         }
                     

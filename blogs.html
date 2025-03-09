@@ -3,25 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nina Hanssen</title>
+    <title>Blogs</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="blogs.js"></script>
 </head>
 <body>
     <div id="header-container"></div>
-    <div class="banner-container">
-        <div class="banner">
-            <img id="banner" src="" alt="Banner Image">
-            <div class="banner-content">
-                <h1 id="title">Loading...</h1>
-                <p id="ingress"></p>
-            </div>
-        </div>
-    </div>
     
-    <div id="quote-container"></div>
 
-    <div id="footer-container"></div>
     <script>
         // Load header dynamically
         fetch("header.html")
@@ -30,14 +19,6 @@
                 document.getElementById("header-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading header:", error));
-
-             // Load header dynamically
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
 
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
