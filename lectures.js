@@ -1,6 +1,6 @@
 const spaceID = "5s0o4h95n44w";
 const accessToken = "x7EkFh4_24fM-0H0hKemD2k6OQY9HBU4sP7H0_ylTfs";
-const entryID = "74KRGoL6oJaaS9gaaSUYYN"; // MainPage entry ID
+const entryID = "6LSshaA7zTIORdvTkDzJZa"; // MainPage entry ID
 
 // Determine locale from URL parameter, defaulting to Norwegian ("nb-NO")
 const params = new URLSearchParams(window.location.search);
@@ -112,7 +112,8 @@ async function fetchContentfulData() {
                         cardDiv.appendChild(imageDiv);
                         document.getElementById("quote-container").appendChild(cardDiv);
                         break;
-                    case "infoContent":
+
+                        case "infoContent":
                             // Create container for info content
                             const infoDiv = document.createElement("div");
                             infoDiv.classList.add("info-content");

@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
+    min-height: 100vh;
+    background: #F6F9FF;
 }
 
 
@@ -24,25 +26,33 @@ body {
 
 }
 
-
+.banner-container{
+    background: #131C40;
+    display: flex;
+    
+    justify-content: center;
+}
 .banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #181818 0%, #242424 80.03%, #2C2C2C 100%);
+    background: #131C40;
     color: white;
+    max-width: 1750px;
+    margin: 0 30px;
 }
 
 .banner img {
     max-width: 1000px;
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     margin-right: 20px;
+    max-height: 1000px;
 }
 
 .banner-content {
-    max-width: 500px;
+    text-align: end;
 }
 
 .banner h1 {
@@ -57,6 +67,11 @@ body {
     opacity: 0.9;
 }
 
+#header-container{
+    background: #131C40;
+    display: flex;
+    justify-content: center;
+}
 
 /* Header Styling */
 .header {
@@ -64,8 +79,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1% 2%;
-    background: transparent;
-    position: absolute;
+    background: #131C40;
+    max-width: 1750px;
     width: 96%;
     top: 0;
     left: 0;
@@ -94,7 +109,7 @@ body {
 
 .nav-button {
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 25px;
     color: white;
     text-decoration: none;
@@ -107,6 +122,186 @@ body {
 }
 
 .book-me {
-    background: white;
+    background: #FF911C;
     color: black;
+    border: 0px;
 }
+.book-me:hover{
+    background: #f7c28a;
+}
+
+#quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 49.53px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin:auto;
+    padding:5%;
+    max-width: 1750px;
+
+    border-bottom: 1px solid gray;
+
+  }
+  
+  .quote-source {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 49.53px;
+    letter-spacing: 0%;
+
+  }
+  
+
+  /* Content Card styles */
+.content-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    max-width: 1750px;
+  }
+  
+  .card-text {
+    flex: 1;
+    padding-right: 1rem;
+  }
+  .card-text h2{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 64px;
+    letter-spacing: 0%;
+
+    }
+    .card-text p{
+        font-family: Roboto;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 49.53px;
+    letter-spacing: 0%;
+
+
+    }
+  .card-image {
+    flex: 1;
+    text-align: right;
+    max-width: 50%;
+  }
+  
+  .card-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .card-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #FF911C;
+    color: black;
+    border: 0px;
+    text-decoration: none;
+    font-size: 2em;
+    transition: background 0.3s, color 0.3s;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+  }
+
+  .info-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 1rem;
+    max-width: 1750px;
+  }
+  
+  .info-title {
+    flex: 1;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 64px;
+    letter-spacing: 0%;
+    padding: 0 2% 0 0;
+
+  }
+  
+  .info-shortText {
+    flex: 1;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 49.53px;
+    letter-spacing: 0%;
+
+  }
+  
+
+  /* Container for the two-column layout */
+.aboutme-layout {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 10rem;
+  }
+  
+  /* Left column for the image */
+  .aboutme-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutme-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Right column for title and body text */
+  .aboutme-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .aboutme-text h1 {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+  }
+  
+  .aboutme-text .aboutme-body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 49.53px;
+    letter-spacing: 0%;
+
+  }
+  
