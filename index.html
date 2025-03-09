@@ -29,6 +29,11 @@
                 document.getElementById("header-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading header:", error));
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
     </script>
 </body>
 </html>

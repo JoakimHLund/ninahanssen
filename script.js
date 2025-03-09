@@ -6,6 +6,7 @@ const entryID = "74KRGoL6oJaaS9gaaSUYYN"; // MainPage entry ID
 const params = new URLSearchParams(window.location.search);
 const locale = params.get('locale') === 'en' ? 'en-US' : 'no';
 
+
 async function fetchContentfulData() {
     // Append locale to the URL
     const url = `https://cdn.contentful.com/spaces/${spaceID}/environments/master/entries/${entryID}?access_token=${accessToken}&locale=${locale}`;
